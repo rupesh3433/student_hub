@@ -1,0 +1,11 @@
+# Use the official PHP Apache image
+FROM php:8.1-apache
+
+# Copy all project files to the Apache root directory
+COPY . /var/www/html/
+
+# Expose port 80 to make the server accessible
+EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["apache2-foreground"]
