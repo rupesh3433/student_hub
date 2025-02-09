@@ -1,0 +1,13 @@
+Options -Indexes
+# Comment out the php_flag directive if PHP is running as CGI/FastCGI.
+# php_flag display_errors off
+
+DirectoryIndex index.php
+
+<FilesMatch "\.(php|inc)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(index|login|logout|dashboard)\.php$">
+    Require all granted
+</FilesMatch>

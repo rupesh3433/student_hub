@@ -1,0 +1,9 @@
+1. Install XAMPP and start Apache/MySQL
+2. Move this folder to htdocs/
+3. Import database:
+   mysql -u root -p student_hub < student_hub.sql
+4. Install dependencies:
+   composer require phpmailer/phpmailer google/apiclient
+5. Configure Google OAuth credentials
+6. Set file permissions:
+   chmod -R 777 dashboard/files/
